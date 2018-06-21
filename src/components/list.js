@@ -1,11 +1,11 @@
 import React from 'react';
-import listData from '../data/list'
 
 
-export default porps =>{
+
+export default props =>{
   
-    const data=listData.map((todo,index)=>{
-       return( <li className="collection-item" key={todo.id}>{todo.title}: 
+    const data=props.data.map((todo,index)=>{
+       return( <li className="collection-item center" key={index}>{todo.title}: 
                </li>
        )
     })
